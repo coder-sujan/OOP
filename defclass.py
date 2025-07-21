@@ -1,8 +1,5 @@
 #here we  learn to define the class
 
-
-
-
 #syntax
 # class ClassName:
     #provide class description
@@ -25,7 +22,7 @@
 
 
 class Bike: # Bike is the name of the class
-    name = "Hey" #variables with some values
+    name = "null" #variables with some values
     gear = 10
     #the variables created inside the class are called attributes.
 
@@ -52,7 +49,32 @@ print(f'Name: {bike1.name}, Gear: {bike1.gear}')
 #access the attributes and even modify it (. notation)
 
 
-    
+class Dog:
+    pass
+
+d1 = Dog()
+d1.name ="aa"
+d1.breed = "ab"
+
+
+print(d1.name)
+
+#using the above constructor with above example
+
+class Dog:
+    def __init__(self, name, breed):
+        self.name = name
+        self.breed = breed
+        
+d1 = Dog("AA1", 'AB1')
+
+
+print(d1.name)
+print(d1.breed)
+
+
+
+        
     
 
   
